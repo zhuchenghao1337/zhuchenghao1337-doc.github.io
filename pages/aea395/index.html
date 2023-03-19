@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mybatis+Plus(springboot版) | vuepress-theme-vdoing</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/zhuchenghao1337-doc.github.io/img/favicon.ico">
+    <meta name="description" content="一个基于VuePress的 知识管理&amp;博客 主题">
+    <meta name="keywords" content="vuepress,theme,blog,vdoing">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/css/0.styles.2714b481.css" as="style"><link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/js/app.e99a4f21.js" as="script"><link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/js/2.34960497.js" as="script"><link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/js/9.3759ef8f.js" as="script"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/10.c5d49faf.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/11.0d7b4018.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/12.b9b7eec6.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/13.9a9acefc.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/14.15ac8afe.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/15.dd118ed2.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/16.0608ec06.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/17.5a6bf23d.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/18.dff1dc40.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/19.df2ef7b4.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/20.521c9714.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/21.3f0b99b5.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/22.9d3155be.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/23.32051221.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/24.1250b3e1.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/25.6a0d4e98.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/26.a37c5b5f.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/27.ca821c0a.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/28.b8132f52.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/29.ee3f339f.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/3.700c79a9.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/30.f795954a.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/31.3e043301.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/32.c2a94dcb.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/33.f1ec8333.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/34.85acc617.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/35.1ba5df1e.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/36.4b8ae8b4.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/37.c620043a.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/38.37cd0832.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/39.7b4f02bf.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/4.6489760c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/40.7573daf9.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/41.a3e8fb67.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/42.7b95dffb.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/43.510ea402.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/44.a11d2692.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/5.f70cfe0c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/6.2028147e.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/7.8ef0a0de.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/8.ecb6f9ac.js">
+    <link rel="stylesheet" href="/zhuchenghao1337-doc.github.io/assets/css/0.styles.2714b481.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zhuchenghao1337-doc.github.io/" class="home-link router-link-active"><img src="/zhuchenghao1337-doc.github.io/img/logo.png" alt="vuepress-theme-vdoing" class="logo"> <span class="site-name can-hide">vuepress-theme-vdoing</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/img/other.png.html" class="nav-link">首页</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/5aada9/" class="nav-link">前端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/82fbaa/" class="nav-link">后端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/2da7be/" class="nav-link">运维</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/40bbfd/" class="nav-link">工具</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美化网站" class="dropdown-title"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="link-title">美化网站</a> <span class="title" style="display:none;">美化网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>指南</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/52d5c3/" class="nav-link">主题初衷与诞生</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a2f161/" class="nav-link">介绍</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/793dcb/" class="nav-link">快速上手</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/2f674a/" class="nav-link">目录结构</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/33d574/" class="nav-link">核心配置和约定</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/088c16/" class="nav-link">自动生成front matter</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/d0d7eb/" class="nav-link">Markdown 容器</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/197691/" class="nav-link">Markdown 中使用组件</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/aea395/404" class="nav-link">相关文章</a></li></ul></li><li class="dropdown-item"><h4>配置</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="nav-link">主题配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f14bdb/" class="nav-link">首页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/3216b0/" class="nav-link">front matter配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/54651a/" class="nav-link">目录页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/1cc523/" class="nav-link">添加摘要</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f51918/" class="nav-link">修改主题颜色和样式</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/ce175c/" class="nav-link">评论栏</a></li></ul></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/img/other.png.html" class="nav-link">首页</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/5aada9/" class="nav-link">前端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/82fbaa/" class="nav-link">后端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/2da7be/" class="nav-link">运维</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/40bbfd/" class="nav-link">工具</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美化网站" class="dropdown-title"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="link-title">美化网站</a> <span class="title" style="display:none;">美化网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>指南</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/52d5c3/" class="nav-link">主题初衷与诞生</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a2f161/" class="nav-link">介绍</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/793dcb/" class="nav-link">快速上手</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/2f674a/" class="nav-link">目录结构</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/33d574/" class="nav-link">核心配置和约定</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/088c16/" class="nav-link">自动生成front matter</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/d0d7eb/" class="nav-link">Markdown 容器</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/197691/" class="nav-link">Markdown 中使用组件</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/aea395/404" class="nav-link">相关文章</a></li></ul></li><li class="dropdown-item"><h4>配置</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="nav-link">主题配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f14bdb/" class="nav-link">首页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/3216b0/" class="nav-link">front matter配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/54651a/" class="nav-link">目录页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/1cc523/" class="nav-link">添加摘要</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f51918/" class="nav-link">修改主题颜色和样式</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/ce175c/" class="nav-link">评论栏</a></li></ul></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <div class="sidebar-slot sidebar-slot-top"><a href="http://apifox.cn/a103xugaoyi" target="_blank"><img src="https://cdn.staticaly.com/gh/xugaoyi/blog-gitalk-comment@master/img/431669861564_.2470ykdcpbds.jpg" alt="npm" class="no-zoom" style="width: 100%;border-radius: 2px;"></a></div> <ul class="sidebar-links"><li><a href="/zhuchenghao1337-doc.github.io/pages/aea395/" aria-current="page" class="active sidebar-link">mybatis+Plus(springboot版)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/zhuchenghao1337-doc.github.io/pages/aea395/#_1-搭建mybatis-plus环境" class="sidebar-link">1.搭建MyBatis-Plus环境</a></li><li class="sidebar-sub-header level2"><a href="/zhuchenghao1337-doc.github.io/pages/aea395/#_2-使用" class="sidebar-link">2.使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/zhuchenghao1337-doc.github.io/pages/aea395/#_2-1单表使用" class="sidebar-link">2.1单表使用</a></li></ul></li></ul></li><li><a href="/zhuchenghao1337-doc.github.io/pages/9ef396/" class="sidebar-link">springMVC</a></li><li><a href="/zhuchenghao1337-doc.github.io/pages/82fbaa/" class="sidebar-link">spring</a></li><li><a href="/zhuchenghao1337-doc.github.io/pages/cf9671/" class="sidebar-link">springboot</a></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/zhuchenghao1337-doc.github.io/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><span data-v-06225672>后端</span></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/zhuchenghao1337" target="_blank" title="作者" class="beLink" data-v-06225672>zch1337</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2023-03-19</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">mybatis+Plus(springboot版)<!----></h1> <div class="page-slot page-slot-top">
+    <div class="wwads-cn wwads-horizontal page-wwads" data-id="136"></div>
+    <style>
+      .page-wwads{
+        width:100%!important;
+        min-height: 0;
+        margin: 0;
+      }
+      .page-wwads .wwads-img img{
+        width:80px!important;
+      }
+      .page-wwads .wwads-poweredby{
+        width: 40px;
+        position: absolute;
+        right: 25px;
+        bottom: 3px;
+      }
+      .wwads-content .wwads-text, .page-wwads .wwads-text{
+        height: 100%;
+        padding-top: 5px;
+        display: block;
+      }
+  </style>
+  </div> <div class="theme-vdoing-content content__default"><h2 id="_1-搭建mybatis-plus环境"><a href="#_1-搭建mybatis-plus环境" class="header-anchor">#</a> 1.搭建MyBatis-Plus环境</h2> <ol><li>依赖</li></ol> <details class="custom-block details"><summary>点击查看</summary> <div class="language- extra-class"><pre class="language-text"><code>        &lt;!--mybatisPlus依赖--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.baomidou&lt;/groupId&gt;
+            &lt;artifactId&gt;mybatis-plus-boot-starter&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;!--mysql数据库驱动--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;mysql&lt;/groupId&gt;
+            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+</code></pre></div></details> <ol start="2"><li>springboot配置</li></ol> <p>::: detail</p> <div class="language- extra-class"><pre class="language-text"><code>server:
+  port: 7777
+spring:
+  datasource:
+    url: jdbc:mysql://124.222.237.176:22135/ruoyi?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=true&amp;serverTimezone=GMT%2B8
+    username: root
+    password: zhuchenghao123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 5MB
+mybatis-plus:
+  configuration:
+    # 日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: delFlag  
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: auto
+</code></pre></div><p>:::</p> <ol start="3"><li>配置easycode插件</li></ol> <details class="custom-block details"><summary>点击查看</summary> <p><strong>entity</strong></p> <div class="language- extra-class"><pre class="language-text"><code>##导入宏定义
+$!{define.vm}
+
+##保存文件（宏定义）
+#save(&quot;/entity&quot;, &quot;.java&quot;)
+
+##包路径（宏定义）
+#setPackageSuffix(&quot;entity&quot;)
+
+##自动导入包（全局变量）
+$!{autoImport.vm}
+
+import java.io.Serializable;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+##表注释（宏定义）
+#tableComment(&quot;表实体类&quot;)
+@SuppressWarnings(&quot;serial&quot;)
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@TableName(&quot;$!{tableInfo.obj.name}&quot;)
+public class $!{tableInfo.name}  {
+#foreach($column in $tableInfo.pkColumn)
+    #if(${column.comment})//${column.comment}#end
+@TableId
+    private $!{tool.getClsNameByFullName($column.type)} $!{column.name};
+#end
+
+#foreach($column in $tableInfo.otherColumn)
+    #if(${column.comment})//${column.comment}#end
+
+    private $!{tool.getClsNameByFullName($column.type)} $!{column.name};
+#end
+
+}
+</code></pre></div><p><strong>mapper</strong></p> <div class="language- extra-class"><pre class="language-text"><code>##导入宏定义
+$!{define.vm}
+
+##设置表后缀（宏定义）
+#setTableSuffix(&quot;Mapper&quot;)
+
+##保存文件（宏定义）
+#save(&quot;/mapper&quot;, &quot;Mapper.java&quot;)
+
+##包路径（宏定义）
+#setPackageSuffix(&quot;mapper&quot;)
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import $!{tableInfo.savePackageName}.entity.$!tableInfo.name;
+
+##表注释（宏定义）
+#tableComment(&quot;表数据库访问层&quot;)
+public interface $!{tableName} extends BaseMapper&lt;$!tableInfo.name&gt; {
+
+}
+
+</code></pre></div><p><strong>service</strong></p> <div class="language- extra-class"><pre class="language-text"><code>##导入宏定义
+$!{define.vm}
+
+##设置表后缀（宏定义）
+#setTableSuffix(&quot;Service&quot;)
+
+##保存文件（宏定义）
+#save(&quot;/service&quot;, &quot;Service.java&quot;)
+
+##包路径（宏定义）
+#setPackageSuffix(&quot;service&quot;)
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import $!{tableInfo.savePackageName}.entity.$!tableInfo.name;
+
+##表注释（宏定义）
+#tableComment(&quot;表服务接口&quot;)
+public interface $!{tableName} extends IService&lt;$!tableInfo.name&gt; {
+
+}
+
+</code></pre></div><p><strong>serviceImpl</strong></p> <div class="language- extra-class"><pre class="language-text"><code>##导入宏定义
+$!{define.vm}
+
+##设置表后缀（宏定义）
+#setTableSuffix(&quot;ServiceImpl&quot;)
+
+##保存文件（宏定义）
+#save(&quot;/service/impl&quot;, &quot;ServiceImpl.java&quot;)
+
+##包路径（宏定义）
+#setPackageSuffix(&quot;service.impl&quot;)
+
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import $!{tableInfo.savePackageName}.mapper.$!{tableInfo.name}Mapper;
+import $!{tableInfo.savePackageName}.entity.$!{tableInfo.name};
+import $!{tableInfo.savePackageName}.service.$!{tableInfo.name}Service;
+import org.springframework.stereotype.Service;
+
+##表注释（宏定义）
+#tableComment(&quot;表服务实现类&quot;)
+@Service
+##@Service(&quot;$!tool.firstLowerCase($tableInfo.name)Service&quot;)
+public class $!{tableName} extends ServiceImpl&lt;$!{tableInfo.name}Mapper, $!{tableInfo.name}&gt; implements $!{tableInfo.name}Service {
+
+}
+
+</code></pre></div></details> <ol start="4"><li>idea可视化工具连接数据库，根据表生成文件</li></ol> <h2 id="_2-使用"><a href="#_2-使用" class="header-anchor">#</a> 2.使用</h2> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>在serviceImpl中，不需要注入mapper
+使用其他service，需要注入</p></div> <h3 id="_2-1单表使用"><a href="#_2-1单表使用" class="header-anchor">#</a> 2.1单表使用</h3> <p><strong>常用的方法</strong></p> <p><strong>动态sql</strong></p> <details class="custom-block details"><summary>点击查看</summary> <div class="language- extra-class"><pre class="language-text"><code>	1.判断 值是否为空 不为空就加入条件
+    // 如果有categoryId 加入条件
+    queryWrapper.eq(Objects.nonNull(categoryId) &amp;&amp; categoryId &gt; 0, Article::getCategoryId, categoryId);	
+</code></pre></div></details></div></div>  <div class="page-edit"><!----> <!----> <!----></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><!----> <a href="/zhuchenghao1337-doc.github.io/pages/9ef396/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">springMVC</div></a></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/zhuchenghao1337-doc.github.io/pages/9ef396/">springMVC</a>→
+      </span></p></div></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="mailto:zch1337@outlook.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/zhuchenghao1337" title="GitHub" target="_blank" class="iconfont icon-github"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2023-2023
+    <span>zch1337 | MIT License</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/zhuchenghao1337-doc.github.io/assets/js/app.e99a4f21.js" defer></script><script src="/zhuchenghao1337-doc.github.io/assets/js/2.34960497.js" defer></script><script src="/zhuchenghao1337-doc.github.io/assets/js/9.3759ef8f.js" defer></script>
+  </body>
+</html>
