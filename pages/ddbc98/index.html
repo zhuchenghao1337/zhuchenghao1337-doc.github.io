@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Clash for windows添加白名单 | vuepress-theme-vdoing</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/zhuchenghao1337-doc.github.io/img/favicon.ico">
+    <meta name="description" content="一个基于VuePress的 知识管理&amp;博客 主题">
+    <meta name="keywords" content="vuepress,theme,blog,vdoing">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/css/0.styles.2714b481.css" as="style"><link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/js/app.274dd157.js" as="script"><link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/js/2.34960497.js" as="script"><link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/js/15.d878e574.js" as="script"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/10.c5d49faf.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/11.01d6b487.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/12.342055c4.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/13.241c804a.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/14.7e9ed5f8.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/16.14b40913.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/17.c8456879.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/18.93234462.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/19.93b01377.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/20.e0dd44d8.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/21.69485ff5.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/22.006e6123.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/23.9657ce54.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/24.baa5a021.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/25.4242ac3d.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/26.282bd645.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/27.9febaf14.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/28.780e322b.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/29.358892f8.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/3.1774c4d6.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/30.1f3a4970.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/31.62e8585a.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/32.f563784f.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/33.6a274552.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/34.46ac55ee.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/35.2349540b.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/36.36312d42.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/37.0a3338e7.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/38.9d2578a2.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/39.d50bf323.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/4.6489760c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/40.61d88ac9.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/41.13ab10f3.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/42.324f2b72.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/43.f29587c6.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/44.65729350.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/45.4273c89c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/46.2c9eaaab.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/47.e1aaf14e.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/5.f70cfe0c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/6.f345d63a.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/7.618f4001.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/8.0d29e168.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/9.7633f4d0.js">
+    <link rel="stylesheet" href="/zhuchenghao1337-doc.github.io/assets/css/0.styles.2714b481.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zhuchenghao1337-doc.github.io/" class="home-link router-link-active"><img src="/zhuchenghao1337-doc.github.io/img/logo.png" alt="vuepress-theme-vdoing" class="logo"> <span class="site-name can-hide">vuepress-theme-vdoing</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/" class="nav-link">首页</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/5aada9/" class="nav-link">前端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/82fbaa/" class="nav-link">后端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/2da7be/" class="nav-link">运维</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/40bbfd/" class="nav-link">工具</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美化网站" class="dropdown-title"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="link-title">美化网站</a> <span class="title" style="display:none;">美化网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>指南</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/52d5c3/" class="nav-link">主题初衷与诞生</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a2f161/" class="nav-link">介绍</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/793dcb/" class="nav-link">快速上手</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/2f674a/" class="nav-link">目录结构</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/33d574/" class="nav-link">核心配置和约定</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/088c16/" class="nav-link">自动生成front matter</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/d0d7eb/" class="nav-link">Markdown 容器</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/197691/" class="nav-link">Markdown 中使用组件</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/ddbc98/404" class="nav-link">相关文章</a></li></ul></li><li class="dropdown-item"><h4>配置</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="nav-link">主题配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f14bdb/" class="nav-link">首页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/3216b0/" class="nav-link">front matter配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/54651a/" class="nav-link">目录页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/1cc523/" class="nav-link">添加摘要</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f51918/" class="nav-link">修改主题颜色和样式</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/ce175c/" class="nav-link">评论栏</a></li></ul></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://raw.githubusercontent.com/zhuchenghao1337/github-images/main/2023/%E5%A4%B4%E5%83%8F.jpg"> <div class="blogger-info"><h3>朱成浩</h3> <span>奋斗的年轻人</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/" class="nav-link">首页</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/5aada9/" class="nav-link">前端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/82fbaa/" class="nav-link">后端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/2da7be/" class="nav-link">运维</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/40bbfd/" class="nav-link">工具</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美化网站" class="dropdown-title"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="link-title">美化网站</a> <span class="title" style="display:none;">美化网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>指南</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/52d5c3/" class="nav-link">主题初衷与诞生</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a2f161/" class="nav-link">介绍</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/793dcb/" class="nav-link">快速上手</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/2f674a/" class="nav-link">目录结构</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/33d574/" class="nav-link">核心配置和约定</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/088c16/" class="nav-link">自动生成front matter</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/d0d7eb/" class="nav-link">Markdown 容器</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/197691/" class="nav-link">Markdown 中使用组件</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/ddbc98/404" class="nav-link">相关文章</a></li></ul></li><li class="dropdown-item"><h4>配置</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="nav-link">主题配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f14bdb/" class="nav-link">首页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/3216b0/" class="nav-link">front matter配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/54651a/" class="nav-link">目录页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/1cc523/" class="nav-link">添加摘要</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f51918/" class="nav-link">修改主题颜色和样式</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/ce175c/" class="nav-link">评论栏</a></li></ul></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <div class="sidebar-slot sidebar-slot-top"><a href="http://apifox.cn/a103xugaoyi" target="_blank"><img src="https://cdn.staticaly.com/gh/xugaoyi/blog-gitalk-comment@master/img/431669861564_.2470ykdcpbds.jpg" alt="npm" class="no-zoom" style="width: 100%;border-radius: 2px;"></a></div> <ul class="sidebar-links"><li><a href="/zhuchenghao1337-doc.github.io/pages/40bbfd/" class="sidebar-link">git</a></li><li><a href="/zhuchenghao1337-doc.github.io/pages/ddbc98/" aria-current="page" class="active sidebar-link">Clash for windows添加白名单</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/zhuchenghao1337-doc.github.io/pages/ddbc98/#_1-进入目录" class="sidebar-link">1.进入目录</a></li><li class="sidebar-sub-header level2"><a href="/zhuchenghao1337-doc.github.io/pages/ddbc98/#_2-替换config-yaml文件" class="sidebar-link">2.替换config.yaml文件</a></li></ul></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/zhuchenghao1337-doc.github.io/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/zhuchenghao1337-doc.github.io/categories/?category=%E5%B7%A5%E5%85%B7" title="分类" data-v-06225672>工具</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/zhuchenghao1337" target="_blank" title="作者" class="beLink" data-v-06225672>zch1337</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2023-03-26</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">Clash for windows添加白名单<!----></h1> <div class="page-slot page-slot-top">
+    <div class="wwads-cn wwads-horizontal page-wwads" data-id="136"></div>
+    <style>
+      .page-wwads{
+        width:100%!important;
+        min-height: 0;
+        margin: 0;
+      }
+      .page-wwads .wwads-img img{
+        width:80px!important;
+      }
+      .page-wwads .wwads-poweredby{
+        width: 40px;
+        position: absolute;
+        right: 25px;
+        bottom: 3px;
+      }
+      .wwads-content .wwads-text, .page-wwads .wwads-text{
+        height: 100%;
+        padding-top: 5px;
+        display: block;
+      }
+  </style>
+  </div> <div class="theme-vdoing-content content__default"><h2 id="_1-进入目录"><a href="#_1-进入目录" class="header-anchor">#</a> 1.进入目录</h2> <p><img src="https://raw.githubusercontent.com/zhuchenghao1337/github-images/main/2023/20230326214313.png" alt=""></p> <h2 id="_2-替换config-yaml文件"><a href="#_2-替换config-yaml文件" class="header-anchor">#</a> 2.替换config.yaml文件</h2> <div class="language- extra-class"><pre class="language-text"><code># config.yaml
+#---------------------------------------------------#
+# 配置文件需要放置在 $HOME/.config/clash/config.yml
+# 或者运行目录下的config.yml
+#---------------------------------------------------#
+# 混合端口 HTTP和SOCKS5用一个端口
+mixed-port: 7890
+
+# HTTP 代理端口
+# port: 7890
+
+# SOCKS5 代理端口
+socks-port: 7891
+
+# Linux 和 macOS 的 redir 代理端口 (如需使用此功能，请取消注释)
+# redir-port: 7892
+
+# 允许局域网的连接（可用来共享代理）
+allow-lan: true
+
+# 仅在将allow-lan设置为true时适用
+# #&quot;*&quot;: 绑定所有IP地址
+# #192.168.122.11: 绑定单个IPv4地址
+# #&quot;[aaaa::a8aa:ff:fe09:57d8]&quot;: 绑定单个IPv6地址
+bind-address: &quot;*&quot;
+ipv6: true
+
+# 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
+# mode: rule
+
+# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
+# 5 个级别：silent / error / warning / info / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
+log-level: info
+
+# Clash 的 RESTful API
+external-controller: '127.0.0.1:9090'
+
+# 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `RESTful API/ui`
+# 参数应填写配置目录的相对路径或绝对路径。
+# http://127.0.0.1:9090/ui/#/
+# external-ui: folder
+# yacd面板：  https://github.com/haishanh/yacd
+# Razord面板：http://clash.razord.top/#/proxies
+# external-ui: dashboard
+
+# RESTful API 的口令 (可选)
+# secret: &quot;&quot;
+
+# 实验性功能
+experimental:
+  ignore-resolve-fail: true # 忽略 DNS 解析失败，默认值为 true
+  # interface-name: en0 # outbound interface name
+
+# 本地 SOCKS5 / HTTP(S) 服务认证
+# authentication:
+#  - &quot;user1:pass1&quot;
+#  - &quot;user2:pass2&quot;
+
+# 实验性功能 hosts, 支持通配符 (例如 *.clash.dev 甚至 *.foo.*.example.com)
+# 静态的域名 比 通配域名 具有更高的优先级 (foo.example.com 优先于 *.example.com)
+# 注意: hosts 在 fake-ip 模式下不生效
+#hosts:
+#   '*.clash.dev': 127.0.0.1
+#   'alpha.clash.dev': '::1'
+
+#dns:
+  #enable: true # 是否启用dns false
+  #ipv6: false
+  #listen: 0.0.0.0:53
+  #enhanced-mode: redir-host # 模式：redir-host或fake-ip
+  #fake-ip-range: 198.18.0.1/16 #
+  #fake-ip-filter: # fake ip 白名单列表，如果你不知道这个参数的作用，请勿修改
+     #- '*.lan'
+     #- localhost.ptlogin2.qq.com
+  #nameserver:
+     #- 223.5.5.5 # 阿里DNS
+     #- 180.76.76.76 # 百度DNS
+     #- 119.29.29.29 # 腾讯DNS
+     #- 117.50.11.11 # ONE DNS拦截版 恶意网站拦截、广告过滤
+     #- 117.50.10.10 # ONE DNS纯净版 直接返回其真实的响应结果
+     #- 114.114.114.114 # 114DNS
+     #- https://dns.alidns.com/dns-query # 阿里 DoH DNS
+     #- https://doh.360.cn/dns-query # 360 DoH DNS
+  #fallback:
+     #- 8.8.8.8 # 谷歌DNS
+     #- 1.1.1.1 # Cloudflare DNS
+     #- tls://dns.rubyfish.cn:853
+     #- tls://1.0.0.1:853
+     #- tls://dns.google:853
+     #- https://dns.rubyfish.cn/dns-query
+     #- https://cloudflare-dns.com/dns-query
+     #- https://dns.google/dns-query
+  #fallback-filter:
+     #geoip: true # 默认
+     #ipcidr: # 在这个网段内的 IP 地址会被考虑为被污染的 IP
+       #- 240.0.0.0/4
+
+# 1. clash DNS 请求逻辑：
+#   (1) 当访问一个域名时， nameserver 与 fallback 列表内的所有服务器并发请求，得到域名对应的 IP 地址。
+#   (2) clash 将选取 nameserver 列表内，解析最快的结果。
+#   (3) 若解析结果中，IP 地址属于 国外，那么 clash 将选择 fallback 列表内，解析最快的结果。
+#
+#   因此，我在 nameserver 和 fallback 内都放置了无污染、解析速度较快的国内 DNS 服务器，以达到最快的解析速度。
+#   但是 fallback 列表内服务器会用在解析境外网站，为了结果绝对无污染，我仅保留了支持 DoT/DoH 的两个服务器。
+#
+# 2. clash DNS 配置注意事项：
+#   (1) 如果您为了确保 DNS 解析结果无污染，请仅保留列表内以 tls:// 或 https:// 开头的 DNS 服务器，但是通常对于国内域名没有必要。
+#   (2) 如果您不在乎可能解析到污染的结果，更加追求速度。请将 nameserver 列表的服务器插入至 fallback 列表内，并移除重复项。
+#
+# 3. 关于 DNS over HTTPS (DoH) 和 DNS over TLS (DoT) 的选择：
+#   对于两项技术双方各执一词，而且会无休止的争论，各有利弊。各位请根据具体需求自行选择，但是配置文件内默认启用 DoT，因为目前国内没有封锁或管制。
+#   DoH: 以 https:// 开头的 DNS 服务器。拥有更好的伪装性，且几乎不可能被运营商或网络管理封锁，但查询效率和安全性可能略低。
+#   DoT: 以 tls:// 开头的 DNS 服务器。拥有更高的安全性和查询效率，但端口有可能被管制或封锁。
+#   若要了解更多关于 DoH/DoT 相关技术，请自行查阅规范文档。
+
+# 代理组
+# 下面这3个不要引到订阅里去 要不会出错
+# Will be ignored after profile selection
+#proxies:
+#  - name: Shadowsocks
+#    type: socks5
+#    server: 127.0.0.1
+#    port: 1080
+#proxy-groups:
+#  - name: Proxy
+#    type: select
+#    proxies:
+#      - Shadowsocks
+#rules:
+#  - 'MATCH,DIRECT'
+
+# Clash for Windows
+# Proxies module latency test settings
+cfw-latency-timeout: 3000
+cfw-latency-url: http://www.gstatic.com/generate_204
+
+# 混合配置（mixin）
+# 支持向所有配置文件中注入公共属性设置
+#cfw-profile-mixin:
+  #dns:
+    #enable: true
+    #listen: :53
+    #enhanced-mode: fake-ip
+    #nameserver:
+     #- 223.5.5.5 # 阿里DNS
+     #- 180.76.76.76 # 百度DNS
+     #- 119.29.29.29 # 腾讯DNS
+     #- 117.50.11.11 # ONE DNS拦截版 恶意网站拦截、广告过滤
+     #- 117.50.10.10 # ONE DNS纯净版 直接返回其真实的响应结果
+     #- 114.114.114.114 # 114DNS
+  #experimental:
+    #interface-name: WLAN
+
+#自定义配置目录
+#cfw-profiles-path: 'C:\Users\Administrator\.config\clash\profiles'
+
+# 打断连接
+# Identify strategy of breaking connections after switching to a new proxy/profile/mode
+# Options for proxy: none, chain(proxy group in connection chains), all
+# Options for profile: true, false
+# Options for mode: true, false
+cfw-conn-break-strategy:
+  proxy: none # none/chain/all
+  profile: true # true/false
+  mode: false # true/false
+
+# 自定义状态栏图标
+#cfw-tray-icon:
+#default: .\resources\static\imgs\logo_64.png        # 默认图标
+#system-proxy-on: .\resources\static\imgs\custom.ico   # 开启系统代理后图标
+
+# 自定义字体
+#cfw-font-family: &quot;Noto Sans TC&quot;   # 系统中存在的字体
+
+# 自定义请求头
+#cfw-http-headers:
+  #token: &quot;123456&quot;
+  #cfw-version: &quot;0.9.11&quot;
+
+# 自定义节点排序
+# 可选参数：
+#  default：按配置文件定义节点顺序
+#  latency：按节点延迟升序排列
+#  alphabet：按节点名称字母表排列
+# Sort proxies in Proxies module by default/latency/alphabet
+cfw-proxies-order: default
+
+# 子进程 启动其他应用
+# Run child process after CFW started
+# Refer: https://docs.cfw.lbyczf.com/contents/childprocess.html
+#cfw-child-process:
+  # 启动订阅转换程序，端口号7893
+  #- command: &quot;subconverter.exe&quot; # run.cmd 程序名称 subconverter.exe -cfw &gt;&gt;logs/run.log 2&gt;&amp;1
+    #args:
+      #- &quot;-cfw&quot; # 运行参数1
+      #- &quot;-f&quot; # 运行参数2
+      #- &quot;pref-acl4ssr.yml&quot; # 运行参数3
+    #options:
+      #cwd: subconverter # 子进程工作目录
+      #detached: true # 子进程独立于其父进程运行
+      #shell: true # 则在 shell 中运行 command
+      #windowsHide: true # 隐藏子进程的控制台窗口
+  # 启动网易云，端口号3333
+  #- command: &quot;unblockneteasemusic.exe&quot; # 启动网易云
+    #args:
+      #- &quot;-p&quot; # 运行参数1
+      #- &quot;3333&quot; # 运行参数2
+    #options:
+      #cwd: unblockNeteaseMusic # 子进程工作目录
+      #detached: true # 子进程独立于其父进程运行
+      #shell: true # 则在 shell 中运行 command
+      #windowsHide: true # 隐藏子进程的控制台窗口
+
+# 系统代理跳过列表 cfw-bypass
+# System proxy will ignore these domains(or ipnet)
+# 系统代理跳过列表-备份的，不起作用，
+# 使用时可以将cfw-bypass-bak与cfw-bypass内容互换
+cfw-bypass-bak:
+  # 原有字段不用删除
+  - qq.com
+  - 'music.163.com' # 网易云域名1
+  - '*.music.126.net' # 网易云域名2
+  - localhost
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - &lt;local&gt;
+# 系统代理跳过列表 起作用的
+cfw-bypass:
+  # 直连列表
+  # MyList
+  - &quot;*.13th.tech&quot;
+  - &quot;*.423down.com&quot;
+  - &quot;*.bokecc.com&quot;
+  - &quot;*.chaipip.com&quot;
+  - &quot;*.chinaplay.store&quot;
+  - &quot;*.hrtsea.com&quot;
+  - &quot;*.kaikeba.com&quot;
+  - &quot;*.laomo.me&quot;
+  - &quot;*.mpyit.com&quot;
+  - &quot;*.msftconnecttest.com&quot;
+  - &quot;*.msftncsi.com&quot;
+  - &quot;*.qupu123.com&quot;
+  - &quot;*.pdfwifi.com&quot;
+  - &quot;*.zhenguanyu.biz&quot;
+  - &quot;*.zhenguanyu.com&quot;
+  # CN域名直连(中国|公司|网络)
+  - &quot;*.cn&quot;
+  - &quot;*.xn--fiqs8s&quot;
+  - &quot;*.xn--55qx5d&quot;
+  - &quot;*.xn--io0a7i&quot;
+  # 中国国内常见域名关键词直连
+  - &quot;*360buy*&quot;
+  - &quot;*alicdn*&quot;
+  - &quot;*alimama*&quot;
+  - &quot;*alipay*&quot;
+  - &quot;*appzapp*&quot;
+  - &quot;*baidupcs*&quot;
+  - &quot;*bilibili*&quot;
+  - &quot;*ccgslb*&quot;
+  - &quot;*chinacache*&quot;
+  - &quot;*duobao*&quot;
+  - &quot;*jdpay*&quot;
+  - &quot;*moke*&quot;
+  - &quot;*qhimg*&quot;
+  - &quot;*vpimg*&quot;
+  - &quot;*xiami*&quot;
+  - &quot;*xiaomi*&quot;
+  # 360
+  - &quot;*.360.com&quot;
+  - &quot;*.360kuai.com&quot;
+  - &quot;*.360safe.com&quot;
+  - &quot;*.dhrest.com&quot;
+  - &quot;*.qhres.com&quot;
+  - &quot;*.qhstatic.com&quot;
+  - &quot;*.qhupdate.com&quot;
+  - &quot;*.so.com&quot;
+  # 4399
+  - &quot;*.4399.com&quot;
+  - &quot;*.4399pk.com&quot;
+  - &quot;*.5054399.com&quot;
+  - &quot;*.img4399.com&quot;
+  # 58
+  - &quot;*.58.com&quot;
+  # Alibaba
+  - &quot;*.1688.com&quot;
+  - &quot;*.aliapp.org&quot;
+  - &quot;*.alibaba.com&quot;
+  - &quot;*.alibabacloud.com&quot;
+  - &quot;*.alibabausercontent.com&quot;
+  - &quot;*.alicdn.com&quot;
+  - &quot;*.alicloudccp.com&quot;
+  - &quot;*.aliexpress.com&quot;
+  - &quot;*.aliimg.com&quot;
+  - &quot;*.alikunlun.com&quot;
+  - &quot;*.alipay.com&quot;
+  - &quot;*.alipayobjects.com&quot;
+  - &quot;*.alisoft.com&quot;
+  - &quot;*.aliyun.com&quot;
+  - &quot;*.aliyuncdn.com&quot;
+  - &quot;*.aliyuncs.com&quot;
+  - &quot;*.aliyundrive.com&quot;
+  - &quot;*.amap.com&quot;
+  - &quot;*.autonavi.com&quot;
+  - &quot;*.dingtalk.com&quot;
+  - &quot;*.ele.me&quot;
+  - &quot;*.hichina.com&quot;
+  - &quot;*.mmstat.com&quot;
+  - &quot;*.mxhichina.com&quot;
+  - &quot;*.soku.com&quot;
+  - &quot;*.taobao.com&quot;
+  - &quot;*.taobaocdn.com&quot;
+  - &quot;*.tbcache.com&quot;
+  - &quot;*.tbcdn.com&quot;
+  - &quot;*.tmall.com&quot;
+  - &quot;*.tmall.hk&quot;
+  - &quot;*.ucweb.com&quot;
+  - &quot;*.xiami.com&quot;
+  - &quot;*.xiami.net&quot;
+  - &quot;*.ykimg.com&quot;
+  - &quot;*.youku.com&quot;
+  # Baidu
+  - &quot;*.baidu.com&quot;
+  - &quot;*.baidubcr.com&quot;
+  - &quot;*.baidupcs.com&quot;
+  - &quot;*.baidustatic.com&quot;
+  - &quot;*.bcebos.com&quot;
+  - &quot;*.bdimg.com&quot;
+  - &quot;*.bdstatic.com&quot;
+  - &quot;*.bdurl.net&quot;
+  - &quot;*.hao123.com&quot;
+  - &quot;*.hao123img.com&quot;
+  - &quot;*.jomodns.com&quot;
+  - &quot;*.yunjiasu-cdn.net&quot;
+  # Bilibili
+  - &quot;*.acg.tv&quot;
+  - &quot;*.acgvideo.com&quot;
+  - &quot;*.b23.tv&quot;
+  - &quot;*.bigfun.cn&quot;
+  - &quot;*.bigfunapp.cn&quot;
+  - &quot;*.biliapi.com&quot;
+  - &quot;*.biliapi.net&quot;
+  - &quot;*.bilibili.com&quot;
+  - &quot;*.biligame.com&quot;
+  - &quot;*.biligame.net&quot;
+  - &quot;*.bilivideo.com&quot;
+  - &quot;*.bilivideo.cn&quot;
+  - &quot;*.hdslb.com&quot;
+  - &quot;*.im9.com&quot;
+  - &quot;*.smtcdns.net&quot;
+  # Blizzard
+  - &quot;*.battle.net&quot;
+  - &quot;*.battlenet.com&quot;
+  - &quot;*.blizzard.com&quot;
+  # ByteDance
+  - &quot;*.amemv.com&quot;
+  - &quot;*.bdxiguaimg.com&quot;
+  - &quot;*.bdxiguastatic.com&quot;
+  - &quot;*.byted-static.com&quot;
+  - &quot;*.bytedance.com&quot;
+  - &quot;*.bytedance.net&quot;
+  - &quot;*.bytedns.net&quot;
+  - &quot;*.bytednsdoc.com&quot;
+  - &quot;*.bytegoofy.com&quot;
+  - &quot;*.byteimg.com&quot;
+  - &quot;*.bytescm.com&quot;
+  - &quot;*.bytetos.com&quot;
+  - &quot;*.bytexservice.com&quot;
+  - &quot;*.douyin.com&quot;
+  - &quot;*.douyinpic.com&quot;
+  - &quot;*.douyinstatic.com&quot;
+  - &quot;*.douyinvod.com&quot;
+  - &quot;*.feelgood.cn&quot;
+  - &quot;*.feiliao.com&quot;
+  - &quot;*.gifshow.com&quot;
+  - &quot;*.huoshan.com&quot;
+  - &quot;*.huoshanzhibo.com&quot;
+  - &quot;*.ibytedapm.com&quot;
+  - &quot;*.iesdouyin.com&quot;
+  - &quot;*.ixigua.com&quot;
+  - &quot;*.kspkg.com&quot;
+  - &quot;*.pstatp.com&quot;
+  - &quot;*.snssdk.com&quot;
+  - &quot;*.toutiao.com&quot;
+  - &quot;*.toutiao13.com&quot;
+  - &quot;*.toutiaoapi.com&quot;
+  - &quot;*.toutiaocdn.com&quot;
+  - &quot;*.toutiaocdn.net&quot;
+  - &quot;*.toutiaocloud.com&quot;
+  - &quot;*.toutiaohao.com&quot;
+  - &quot;*.toutiaohao.net&quot;
+  - &quot;*.toutiaoimg.com&quot;
+  - &quot;*.toutiaopage.com&quot;
+  - &quot;*.wukong.com&quot;
+  - &quot;*.zijieapi.com&quot;
+  - &quot;*.zijieimg.com&quot;
+  - &quot;*.zjbyte.com&quot;
+  - &quot;*.zjcdn.com&quot;
+  # CCTV
+  - &quot;*.cctv.com&quot;
+  - &quot;*.cctvpic.com&quot;
+  - &quot;*.livechina.com&quot;
+  # ChinaNet
+  - &quot;*.21cn.com&quot;
+  # DiDi
+  - &quot;*.didialift.com&quot;
+  - &quot;*.didiglobal.com&quot;
+  - &quot;*.udache.com&quot;
+  # Douyu 斗鱼
+  - &quot;*.douyu.com&quot;
+  - &quot;*.douyu.tv&quot;
+  - &quot;*.douyuscdn.com&quot;
+  - &quot;*.douyutv.com&quot;
+  # Epic
+  - &quot;*.epicgames.com&quot;
+  - &quot;*.epicgames.dev&quot;
+  - &quot;*.helpshift.com&quot;
+  - &quot;*.paragon.com&quot;
+  - &quot;*.unrealengine.com&quot;
+  # HuaWei
+  - &quot;*.dbankcdn.com&quot;
+  - &quot;*.hc-cdn.com&quot;
+  - &quot;*.hicloud.com&quot;
+  - &quot;*.hihonor.com&quot;
+  - &quot;*.huawei.com&quot;
+  - &quot;*.huaweicloud.com&quot;
+  - &quot;*.huaweishop.net&quot;
+  - &quot;*.hwccpc.com&quot;
+  - &quot;*.vmall.com&quot;
+  - &quot;*.vmallres.com&quot;
+  # Iflytek 科大讯飞
+  - &quot;*.iflyink.com&quot;
+  - &quot;*.iflyrec.com&quot;
+  - &quot;*.iflytek.com&quot;
+  # Iqiyi
+  - &quot;*.71.am&quot;
+  - &quot;*.71edge.com&quot;
+  - &quot;*.iqiyi.com&quot;
+  - &quot;*.iqiyipic.com&quot;
+  - &quot;*.ppsimg.com&quot;
+  - &quot;*.qiyi.com&quot;
+  - &quot;*.qiyipic.com&quot;
+  - &quot;*.qy.net&quot;
+  # JD
+  - &quot;*.360buy.com&quot;
+  - &quot;*.360buyimg.com&quot;
+  - &quot;*.jcloudcs.com&quot;
+  - &quot;*.jd.com&quot;
+  - &quot;*.jd.hk&quot;
+  - &quot;*.jdcloud.com&quot;
+  - &quot;*.jdpay.com&quot;
+  - &quot;*.paipai.com&quot;
+  # Kingsoft
+  - &quot;*.iciba.com&quot;
+  - &quot;*.ksosoft.com&quot;
+  - &quot;*.ksyun.com&quot;
+  # Kuaishou 快手
+  - &quot;*.kuaishou.com&quot;
+  - &quot;*.yximgs.com&quot;
+  # Meitu
+  - &quot;*.meitu.com&quot;
+  - &quot;*.meitudata.com&quot;
+  - &quot;*.meitustat.com&quot;
+  - &quot;*.meipai.com&quot;
+  # LeTV 乐视
+  - &quot;*.le.com&quot;
+  - &quot;*.lecloud.com&quot;
+  - &quot;*.letv.com&quot;
+  - &quot;*.letvcloud.com&quot;
+  - &quot;*.letvimg.com&quot;
+  - &quot;*.letvlive.com&quot;
+  - &quot;*.letvstore.com&quot;
+  # MGTV 芒果TV
+  - &quot;*.hitv.com&quot;
+  - &quot;*.hunantv.com&quot;
+  - &quot;*.mgtv.com&quot;
+  # MI
+  - &quot;*.duokan.com&quot;
+  - &quot;*.mi-img.com&quot;
+  - &quot;*.mi.com&quot;
+  - &quot;*.miui.com&quot;
+  - &quot;*.xiaomi.com&quot;
+  - &quot;*.xiaomi.net&quot;
+  - &quot;*.xiaomicp.com&quot;
+  # NetEase
+  - &quot;*.126.com&quot;
+  - &quot;*.126.net&quot;
+  - &quot;*.127.net&quot;
+  - &quot;*.163.com&quot;
+  - &quot;*.163yun.com&quot;
+  - &quot;*.lofter.com&quot;
+  - &quot;*.netease.com&quot;
+  - &quot;*.ydstatic.com&quot;
+  - &quot;*.youdao.com&quot;
+  # PPTV、PPLive
+  - &quot;*.pplive.com&quot;
+  - &quot;*.pptv.com&quot;
+  # PDD 拼多多
+  - &quot;*.pinduoduo.com&quot;
+  - &quot;*.yangkeduo.com&quot;
+  # Sina
+  - &quot;*.leju.com&quot;
+  - &quot;*.miaopai.com&quot;
+  - &quot;*.sina.com&quot;
+  - &quot;*.sina.com.cn&quot;
+  - &quot;*.sina.cn&quot;
+  - &quot;*.sinaapp.com&quot;
+  - &quot;*.sinaapp.cn&quot;
+  - &quot;*.sinaimg.com&quot;
+  - &quot;*.sinaimg.cn&quot;
+  - &quot;*.weibo.com&quot;
+  - &quot;*.weibo.cn&quot;
+  - &quot;*.weibocdn.com&quot;
+  - &quot;*.weibocdn.cn&quot;
+  - &quot;*.xiaoka.tv&quot;
+  # Sohu Sogo
+  - &quot;*.go2map.com&quot;
+  - &quot;*.sogo.com&quot;
+  - &quot;*.sogou.com&quot;
+  - &quot;*.sogoucdn.com&quot;
+  - &quot;*.sohu-inc.com&quot;
+  - &quot;*.sohu.com&quot;
+  - &quot;*.sohucs.com&quot;
+  - &quot;*.sohuno.com&quot;
+  - &quot;*.sohurdc.com&quot;
+  - &quot;*.v-56.com&quot;
+  # Sony
+  - &quot;*.playstation.com&quot;
+  - &quot;*.playstation.net&quot;
+  - &quot;*.playstationnetwork.com&quot;
+  - &quot;*.sony.com&quot;
+  - &quot;*.sonyentertainmentnetwork.com&quot;
+  # SteamCN
+  - &quot;*.cm.steampowered.com&quot;
+  - &quot;*.steamcontent.com&quot;
+  - &quot;*.steamusercontent.com&quot;
+  - &quot;*.steamchina.com&quot;
+  - &quot;csgo.wmsj.cn&quot;
+  - &quot;dota2.wmsj.cn&quot;
+  - &quot;wmsjsteam.com&quot;
+  - &quot;dl.steam.clngaa.com&quot;
+  - &quot;dl.steam.ksyna.com&quot;
+  - &quot;st.dl.bscstorage.net&quot;
+  - &quot;st.dl.eccdnx.com&quot;
+  - &quot;st.dl.pinyuncloud.com&quot;
+  - &quot;steampipe.steamcontent.tnkjmec.com&quot;
+  - &quot;steampowered.com.8686c.com&quot;
+  - &quot;steamstatic.com.8686c.com&quot;
+  # Tencent
+  - &quot;*.foxmail.com&quot;
+  - &quot;*.gtimg.com&quot;
+  - &quot;*.idqqimg.com&quot;
+  - &quot;*.igamecj.com&quot;
+  - &quot;*.myapp.com&quot;
+  - &quot;*.myqcloud.com&quot;
+  - &quot;*.qq.com&quot;
+  - &quot;*.qqmail.com&quot;
+  - &quot;*.qqurl.com&quot;
+  - &quot;*.smtcdns.com&quot;
+  - &quot;*.smtcdns.net&quot;
+  - &quot;*.soso.com&quot;
+  - &quot;*.tencent-cloud.net&quot;
+  - &quot;*.tencent.com&quot;
+  - &quot;*.tencentmind.com&quot;
+  - &quot;*.tenpay.com&quot;
+  - &quot;*.wechat.com&quot;
+  - &quot;*.weixin.com&quot;
+  - &quot;*.weiyun.com&quot;
+  # Vip 唯品会
+  - &quot;*.appsimg.com&quot;
+  - &quot;*.appvipshop.com&quot;
+  - &quot;*.vip.com&quot;
+  - &quot;*.vipstatic.com&quot;
+  # Ximalaya 喜马拉雅
+  - &quot;*.ximalaya.com&quot;
+  - &quot;*.xmcdn.com&quot;
+  # Xunlei 迅雷
+  - &quot;*.00cdn.com&quot;
+  - &quot;*.88cdn.com&quot;
+  - &quot;*.kanimg.com&quot;
+  - &quot;*.kankan.com&quot;
+  - &quot;*.p2cdn.com&quot;
+  - &quot;*.sandai.net&quot;
+  - &quot;*.thundercdn.com&quot;
+  - &quot;*.xunlei.com&quot;
+  # YYeTs 人人影视
+  - &quot;*.got001.com&quot;
+  - &quot;*.p4pfile.com&quot;
+  - &quot;*.rrys.tv&quot;
+  - &quot;*.rrys2020.com&quot;
+  - &quot;*.yyets.com&quot;
+  - &quot;*.zimuzu.io&quot;
+  - &quot;*.zimuzu.tv&quot;
+  - &quot;*.zmz001.com&quot;
+  - &quot;*.zmz002.com&quot;
+  - &quot;*.zmz003.com&quot;
+  - &quot;*.zmz004.com&quot;
+  - &quot;*.zmz2019.com&quot;
+  - &quot;*.zmzapi.com&quot;
+  - &quot;*.zmzapi.net&quot;
+  - &quot;*.zmzfile.com&quot;
+  # Private Tracker
+  - &quot;*announce*&quot;
+  - &quot;*torrent*&quot;
+  - &quot;*tracker*&quot;
+  - &quot;*.animebytes.tv&quot;
+  - &quot;*.animetorrents.me&quot;
+  - &quot;*.awesome-hd.me&quot;
+  - &quot;*.beitai.pt&quot;
+  - &quot;*.bittorrent.com&quot;
+  - &quot;*.broadcasthe.net&quot;
+  - &quot;*.chdbits.co&quot;
+  - &quot;*.classix-unlimited.co.uk&quot;
+  - &quot;*.empornium.me&quot;
+  - &quot;*.gazellegames.net&quot;
+  - &quot;*.hd4fans.org&quot;
+  - &quot;*.hdchina.org&quot;
+  - &quot;*.hdhome.org&quot;
+  - &quot;*.hdsky.me&quot;
+  - &quot;*.hdtime.org&quot;
+  - &quot;*.hdzone.me&quot;
+  - &quot;*.icetorrent.org&quot;
+  - &quot;*.jpopsuki.eu&quot;
+  - &quot;*.keepfrds.com&quot;
+  - &quot;*.leaguehd.com&quot;
+  - &quot;*.m-team.cc&quot;
+  - &quot;*.madsrevolution.net&quot;
+  - &quot;*.msg.vg&quot;
+  - &quot;*.nanyangpt.com&quot;
+  - &quot;*.ncore.cc&quot;
+  - &quot;*.open.cd&quot;
+  - &quot;*.ourbits.club&quot;
+  - &quot;*.passthepopcorn.me&quot;
+  - &quot;*.privatehd.to&quot;
+  - &quot;*.pthome.net&quot;
+  - &quot;*.redacted.ch&quot;
+  - &quot;*.springsunday.net&quot;
+  - &quot;*.tjupt.org&quot;
+  - &quot;*.tju.pt&quot;
+  - &quot;*.totheglory.im&quot;
+  - &quot;*.trontv.com&quot;
+  # TeamViewer
+  - &quot;*.teamviewer.com&quot;
+  # Public Direct CDN 公共直连
+  - &quot;*.baomitu.com&quot;
+  - &quot;*.bootcss.com&quot;
+  - &quot;*.jiasule.com&quot;
+  - &quot;*.staticfile.org&quot;
+  - &quot;*.upaiyun.com&quot;
+  # AccelerateDirectSites
+  - &quot;*.10010.com&quot;
+  - &quot;*.115.com&quot;
+  - &quot;*.12306.com&quot;
+  - &quot;*.17173.com&quot;
+  - &quot;*.178.com&quot;
+  - &quot;*.17k.com&quot;
+  - &quot;*.360doc.com&quot;
+  - &quot;*.36kr.com&quot;
+  - &quot;*.3dmgame.com&quot;
+  - &quot;*.51cto.com&quot;
+  - &quot;*.51job.com&quot;
+  - &quot;*.51jobcdn.com&quot;
+  - &quot;*.56.com&quot;
+  - &quot;*.8686c.com&quot;
+  - &quot;*.abchina.com&quot;
+  - &quot;*.abercrombie.com&quot;
+  - &quot;*.acfun.tv&quot;
+  - &quot;*.air-matters.com&quot;
+  - &quot;*.air-matters.io&quot;
+  - &quot;*.aixifan.com&quot;
+  - &quot;*.algocasts.io&quot;
+  - &quot;*.babytree.com&quot;
+  - &quot;*.babytreeimg.com&quot;
+  - &quot;*.baicizhan.com&quot;
+  - &quot;*.baidupan.com&quot;
+  - &quot;*.baike.com&quot;
+  - &quot;*.biqudu.com&quot;
+  - &quot;*.biquge.com&quot;
+  - &quot;*.bitauto.com&quot;
+  - &quot;*.c-ctrip.com&quot;
+  - &quot;*.camera360.com&quot;
+  - &quot;*.cdnmama.com&quot;
+  - &quot;*.chaoxing.com&quot;
+  - &quot;*.che168.com&quot;
+  - &quot;*.chinacache.net&quot;
+  - &quot;*.chinaso.com&quot;
+  - &quot;*.chinaz.com&quot;
+  - &quot;*.chinaz.net&quot;
+  - &quot;*.chuimg.com&quot;
+  - &quot;*.cibntv.net&quot;
+  - &quot;*.clouddn.com&quot;
+  - &quot;*.cloudxns.net&quot;
+  - &quot;*.cn163.net&quot;
+  - &quot;*.cnblogs.com&quot;
+  - &quot;*.cnki.net&quot;
+  - &quot;*.cnmstl.net&quot;
+  - &quot;*.coolapk.com&quot;
+  - &quot;*.coolapkmarket.com&quot;
+  - &quot;*.csdn.net&quot;
+  - &quot;*.ctrip.com&quot;
+  - &quot;*.dangdang.com&quot;
+  - &quot;*.dfcfw.com&quot;
+  - &quot;*.dianping.com&quot;
+  - &quot;*.dilidili.wang&quot;
+  - &quot;*.douban.com&quot;
+  - &quot;*.doubanio.com&quot;
+  - &quot;*.dpfile.com&quot;
+  - &quot;*.duowan.com&quot;
+  - &quot;*.dxycdn.com&quot;
+  - &quot;*.dytt8.net&quot;
+  - &quot;*.easou.com&quot;
+  - &quot;*.eastday.com&quot;
+  - &quot;*.eastmoney.com&quot;
+  - &quot;*.ecitic.com&quot;
+  - &quot;*.ewqcxz.com&quot;
+  - &quot;*.fang.com&quot;
+  - &quot;*.fantasy.tv&quot;
+  - &quot;*.feng.com&quot;
+  - &quot;*.fengkongcloud.com&quot;
+  - &quot;*.fir.im&quot;
+  - &quot;*.frdic.com&quot;
+  - &quot;*.fresh-ideas.cc&quot;
+  - &quot;*.ganji.com&quot;
+  - &quot;*.ganjistatic1.com&quot;
+  - &quot;*.geetest.com&quot;
+  - &quot;*.geilicdn.com&quot;
+  - &quot;*.ghpym.com&quot;
+  - &quot;*.godic.net&quot;
+  - &quot;*.guazi.com&quot;
+  - &quot;*.gwdang.com&quot;
+  - &quot;*.gzlzfm.com&quot;
+  - &quot;*.haibian.com&quot;
+  - &quot;*.haosou.com&quot;
+  - &quot;*.hollisterco.com&quot;
+  - &quot;*.hongxiu.com&quot;
+  - &quot;*.huajiao.com&quot;
+  - &quot;*.hupu.com&quot;
+  - &quot;*.huxiucdn.com&quot;
+  - &quot;*.huya.com&quot;
+  - &quot;*.ifeng.com&quot;
+  - &quot;*.ifengimg.com&quot;
+  - &quot;*.images-amazon.com&quot;
+  - &quot;*.infzm.com&quot;
+  - &quot;*.ipip.net&quot;
+  - &quot;*.it168.com&quot;
+  - &quot;*.ithome.com&quot;
+  - &quot;*.ixdzs.com&quot;
+  - &quot;*.jianguoyun.com&quot;
+  - &quot;*.jianshu.com&quot;
+  - &quot;*.jianshu.io&quot;
+  - &quot;*.jianshuapi.com&quot;
+  - &quot;*.jiathis.com&quot;
+  - &quot;*.jmstatic.com&quot;
+  - &quot;*.jumei.com&quot;
+  - &quot;*.kaola.com&quot;
+  - &quot;*.knewone.com&quot;
+  - &quot;*.koowo.com&quot;
+  - &quot;*.ksyungslb.com&quot;
+  - &quot;*.kuaidi100.com&quot;
+  - &quot;*.kugou.com&quot;
+  - &quot;*.lancdns.com&quot;
+  - &quot;*.landiannews.com&quot;
+  - &quot;*.lanzou.com&quot;
+  - &quot;*.lanzoui.com&quot;
+  - &quot;*.lanzoux.com&quot;
+  - &quot;*.lemicp.com&quot;
+  - &quot;*.letitfly.me&quot;
+  - &quot;*.lizhi.fm&quot;
+  - &quot;*.lizhi.io&quot;
+  - &quot;*.lizhifm.com&quot;
+  - &quot;*.luoo.net&quot;
+  - &quot;*.lvmama.com&quot;
+  - &quot;*.lxdns.com&quot;
+  - &quot;*.maoyan.com&quot;
+  - &quot;*.meilishuo.com&quot;
+  - &quot;*.meituan.com&quot;
+  - &quot;*.meituan.net&quot;
+  - &quot;*.meizu.com&quot;
+  - &quot;*.migucloud.com&quot;
+  - &quot;*.miguvideo.com&quot;
+  - &quot;*.mobike.com&quot;
+  - &quot;*.mogu.com&quot;
+  - &quot;*.mogucdn.com&quot;
+  - &quot;*.mogujie.com&quot;
+  - &quot;*.moji.com&quot;
+  - &quot;*.moke.com&quot;
+  - &quot;*.msstatic.com&quot;
+  - &quot;*.mubu.com&quot;
+  - &quot;*.myunlu.com&quot;
+  - &quot;*.nruan.com&quot;
+  - &quot;*.nuomi.com&quot;
+  - &quot;*.onedns.net&quot;
+  - &quot;*.oneplus.com&quot;
+  - &quot;*.onlinedown.net&quot;
+  - &quot;*.oppo.com&quot;
+  - &quot;*.oracle.com&quot;
+  - &quot;*.oschina.net&quot;
+  - &quot;*.ourdvs.com&quot;
+  - &quot;*.polyv.net&quot;
+  - &quot;*.qbox.me&quot;
+  - &quot;*.qcloud.com&quot;
+  - &quot;*.qcloudcdn.com&quot;
+  - &quot;*.qdaily.com&quot;
+  - &quot;*.qdmm.com&quot;
+  - &quot;*.qhimg.com&quot;
+  - &quot;*.qianqian.com&quot;
+  - &quot;*.qidian.com&quot;
+  - &quot;*.qihucdn.com&quot;
+  - &quot;*.qin.io&quot;
+  - &quot;*.qiniu.com&quot;
+  - &quot;*.qiniucdn.com&quot;
+  - &quot;*.qiniudn.com&quot;
+  - &quot;*.qiushibaike.com&quot;
+  - &quot;*.quanmin.tv&quot;
+  - &quot;*.qunar.com&quot;
+  - &quot;*.qunarzz.com&quot;
+  - &quot;*.realme.com&quot;
+  - &quot;*.repaik.com&quot;
+  - &quot;*.ruguoapp.com&quot;
+  - &quot;*.runoob.com&quot;
+  - &quot;*.sankuai.com&quot;
+  - &quot;*.segmentfault.com&quot;
+  - &quot;*.sf-express.com&quot;
+  - &quot;*.shumilou.net&quot;
+  - &quot;*.simplecd.me&quot;
+  - &quot;*.smzdm.com&quot;
+  - &quot;*.snwx.com&quot;
+  - &quot;*.soufunimg.com&quot;
+  - &quot;*.sspai.com&quot;
+  - &quot;*.startssl.com&quot;
+  - &quot;*.suning.com&quot;
+  - &quot;*.synology.com&quot;
+  - &quot;*.taihe.com&quot;
+  - &quot;*.th-sjy.com&quot;
+  - &quot;*.tianqi.com&quot;
+  - &quot;*.tianqistatic.com&quot;
+  - &quot;*.tianyancha.com&quot;
+  - &quot;*.tianyaui.com&quot;
+  - &quot;*.tietuku.com&quot;
+  - &quot;*.tiexue.net&quot;
+  - &quot;*.tmiaoo.com&quot;
+  - &quot;*.trip.com&quot;
+  - &quot;*.ttmeiju.com&quot;
+  - &quot;*.tudou.com&quot;
+  - &quot;*.tuniu.com&quot;
+  - &quot;*.tuniucdn.com&quot;
+  - &quot;*.umengcloud.com&quot;
+  - &quot;*.upyun.com&quot;
+  - &quot;*.uxengine.net&quot;
+  - &quot;*.videocc.net&quot;
+  - &quot;*.vivo.com&quot;
+  - &quot;*.wandoujia.com&quot;
+  - &quot;*.weather.com&quot;
+  - &quot;*.weico.cc&quot;
+  - &quot;*.weidian.com&quot;
+  - &quot;*.weiphone.com&quot;
+  - &quot;*.weiphone.net&quot;
+  - &quot;*.womai.com&quot;
+  - &quot;*.wscdns.com&quot;
+  - &quot;*.xdrig.com&quot;
+  - &quot;*.xhscdn.com&quot;
+  - &quot;*.xiachufang.com&quot;
+  - &quot;*.xiaohongshu.com&quot;
+  - &quot;*.xiaojukeji.com&quot;
+  - &quot;*.xinhuanet.com&quot;
+  - &quot;*.xip.io&quot;
+  - &quot;*.xitek.com&quot;
+  - &quot;*.xiumi.us&quot;
+  - &quot;*.xslb.net&quot;
+  - &quot;*.xueqiu.com&quot;
+  - &quot;*.yach.me&quot;
+  - &quot;*.yeepay.com&quot;
+  - &quot;*.yhd.com&quot;
+  - &quot;*.yihaodianimg.com&quot;
+  - &quot;*.yinxiang.com&quot;
+  - &quot;*.yinyuetai.com&quot;
+  - &quot;*.yixia.com&quot;
+  - &quot;*.ys168.com&quot;
+  - &quot;*.yuewen.com&quot;
+  - &quot;*.yy.com&quot;
+  - &quot;*.yystatic.com&quot;
+  - &quot;*.zealer.com&quot;
+  - &quot;*.zhangzishi.cc&quot;
+  - &quot;*.zhanqi.tv&quot;
+  - &quot;*.zhaopin.com&quot;
+  - &quot;*.zhihu.com&quot;
+  - &quot;*.zhimg.com&quot;
+  - &quot;*.zhongsou.com&quot;
+  - &quot;*.zhuihd.com&quot;
+  - &quot;localhost&quot;
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - &lt;local&gt;
+</code></pre></div></div></div>  <div class="page-edit"><!----> <div class="tags"><a href="/zhuchenghao1337-doc.github.io/tags/?tag=VPN" title="标签">#VPN</a><a href="/zhuchenghao1337-doc.github.io/tags/?tag=Tool" title="标签">#Tool</a></div> <!----></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/zhuchenghao1337-doc.github.io/pages/40bbfd/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">git</div></a> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/zhuchenghao1337-doc.github.io/pages/40bbfd/" class="prev">git</a></span> <!----></p></div></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="mailto:zch1337@outlook.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/zhuchenghao1337" title="GitHub" target="_blank" class="iconfont icon-github"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2023-2023
+    <span>zch1337 | MIT License</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/zhuchenghao1337-doc.github.io/assets/js/app.274dd157.js" defer></script><script src="/zhuchenghao1337-doc.github.io/assets/js/2.34960497.js" defer></script><script src="/zhuchenghao1337-doc.github.io/assets/js/15.d878e574.js" defer></script>
+  </body>
+</html>
