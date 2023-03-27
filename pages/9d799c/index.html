@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>短信验证码 | vuepress-theme-vdoing</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/zhuchenghao1337-doc.github.io/img/favicon.ico">
+    <meta name="description" content="一个基于VuePress的 知识管理&amp;博客 主题">
+    <meta name="keywords" content="vuepress,theme,blog,vdoing">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/css/0.styles.2714b481.css" as="style"><link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/js/app.b5aa0822.js" as="script"><link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/js/2.34960497.js" as="script"><link rel="preload" href="/zhuchenghao1337-doc.github.io/assets/js/16.9d8da3be.js" as="script"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/10.fbb6cb19.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/11.bd1cc0b7.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/12.604cf999.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/13.e1b7fb0a.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/14.0b1ea27c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/15.3fb6f17e.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/17.a4829629.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/18.e7ca4f50.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/19.1b0a7380.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/20.a61f520d.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/21.26286083.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/22.4ac6cc52.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/23.4b9fba24.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/24.cfafd8ed.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/25.a19aa30c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/26.1379149c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/27.4096fcb7.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/28.acd89e54.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/29.538a8119.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/3.dfd6b8a2.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/30.f64f1fb6.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/31.3e22596c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/32.0e157fb3.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/33.dc5a2ec2.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/34.911d4e1e.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/35.563229f7.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/36.ddf4bbfd.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/37.cc872535.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/38.228b79ef.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/39.158e927f.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/4.6489760c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/40.b3712bc5.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/41.325017f2.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/42.ab748ed3.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/43.eb214d3e.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/44.afb5fa21.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/45.1a6e9303.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/46.3c8977ee.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/47.781c5884.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/48.5ef2ef4c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/5.f70cfe0c.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/6.2028147e.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/7.10a0b1b5.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/8.0d29e168.js"><link rel="prefetch" href="/zhuchenghao1337-doc.github.io/assets/js/9.74aacd41.js">
+    <link rel="stylesheet" href="/zhuchenghao1337-doc.github.io/assets/css/0.styles.2714b481.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu only-sidebarItem"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zhuchenghao1337-doc.github.io/" class="home-link router-link-active"><img src="/zhuchenghao1337-doc.github.io/img/logo.png" alt="vuepress-theme-vdoing" class="logo"> <span class="site-name can-hide">vuepress-theme-vdoing</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/" class="nav-link">首页</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/5aada9/" class="nav-link">前端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/82fbaa/" class="nav-link">后端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/2da7be/" class="nav-link">运维</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/40bbfd/" class="nav-link">工具</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美化网站" class="dropdown-title"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="link-title">美化网站</a> <span class="title" style="display:none;">美化网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>指南</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/52d5c3/" class="nav-link">主题初衷与诞生</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a2f161/" class="nav-link">介绍</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/793dcb/" class="nav-link">快速上手</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/2f674a/" class="nav-link">目录结构</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/33d574/" class="nav-link">核心配置和约定</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/088c16/" class="nav-link">自动生成front matter</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/d0d7eb/" class="nav-link">Markdown 容器</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/197691/" class="nav-link">Markdown 中使用组件</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/9d799c/404" class="nav-link">相关文章</a></li></ul></li><li class="dropdown-item"><h4>配置</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="nav-link">主题配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f14bdb/" class="nav-link">首页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/3216b0/" class="nav-link">front matter配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/54651a/" class="nav-link">目录页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/1cc523/" class="nav-link">添加摘要</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f51918/" class="nav-link">修改主题颜色和样式</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/ce175c/" class="nav-link">评论栏</a></li></ul></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://raw.githubusercontent.com/zhuchenghao1337/github-images/main/2023/%E5%A4%B4%E5%83%8F.jpg"> <div class="blogger-info"><h3>朱成浩</h3> <span>奋斗的年轻人</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/" class="nav-link">首页</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/5aada9/" class="nav-link">前端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/82fbaa/" class="nav-link">后端</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/2da7be/" class="nav-link">运维</a></div><div class="nav-item"><a href="/zhuchenghao1337-doc.github.io/pages/40bbfd/" class="nav-link">工具</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美化网站" class="dropdown-title"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="link-title">美化网站</a> <span class="title" style="display:none;">美化网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>指南</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/52d5c3/" class="nav-link">主题初衷与诞生</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a2f161/" class="nav-link">介绍</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/793dcb/" class="nav-link">快速上手</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/2f674a/" class="nav-link">目录结构</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/33d574/" class="nav-link">核心配置和约定</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/088c16/" class="nav-link">自动生成front matter</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/d0d7eb/" class="nav-link">Markdown 容器</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/197691/" class="nav-link">Markdown 中使用组件</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/9d799c/404" class="nav-link">相关文章</a></li></ul></li><li class="dropdown-item"><h4>配置</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/a20ce8/" class="nav-link">主题配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f14bdb/" class="nav-link">首页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/3216b0/" class="nav-link">front matter配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/54651a/" class="nav-link">目录页配置</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/1cc523/" class="nav-link">添加摘要</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/f51918/" class="nav-link">修改主题颜色和样式</a></li><li class="dropdown-subitem"><a href="/zhuchenghao1337-doc.github.io/pages/ce175c/" class="nav-link">评论栏</a></li></ul></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <div class="sidebar-slot sidebar-slot-top"><a href="http://apifox.cn/a103xugaoyi" target="_blank"><img src="https://cdn.staticaly.com/gh/xugaoyi/blog-gitalk-comment@master/img/431669861564_.2470ykdcpbds.jpg" alt="npm" class="no-zoom" style="width: 100%;border-radius: 2px;"></a></div> <ul class="sidebar-links"><li><a href="/zhuchenghao1337-doc.github.io/pages/9d799c/" aria-current="page" class="active sidebar-link">短信验证码</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/zhuchenghao1337-doc.github.io/pages/9d799c/#_1-必备知识" class="sidebar-link">1.必备知识</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/zhuchenghao1337-doc.github.io/pages/9d799c/#_1-1短信发送流程" class="sidebar-link">1.1短信发送流程</a></li><li class="sidebar-sub-header level3"><a href="/zhuchenghao1337-doc.github.io/pages/9d799c/#_1-2短信模板" class="sidebar-link">1.2短信模板</a></li><li class="sidebar-sub-header level3"><a href="/zhuchenghao1337-doc.github.io/pages/9d799c/#_1-3java发送请求" class="sidebar-link">1.3Java发送请求</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/zhuchenghao1337-doc.github.io/pages/9d799c/#_2-步骤流程" class="sidebar-link">2.步骤流程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/zhuchenghao1337-doc.github.io/pages/9d799c/#_2-1依赖和工具类" class="sidebar-link">2.1依赖和工具类</a></li><li class="sidebar-sub-header level3"><a href="/zhuchenghao1337-doc.github.io/pages/9d799c/#_2-2写发送验证码接口" class="sidebar-link">2.2写发送验证码接口</a></li><li class="sidebar-sub-header level3"><a href="/zhuchenghao1337-doc.github.io/pages/9d799c/#_2-3登录-其他-接口" class="sidebar-link">2.3登录(其他)接口</a></li></ul></li></ul></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/zhuchenghao1337-doc.github.io/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/zhuchenghao1337-doc.github.io/categories/?category=Demo" title="分类" data-v-06225672>Demo</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/zhuchenghao1337" target="_blank" title="作者" class="beLink" data-v-06225672>zch1337</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2023-03-27</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">短信验证码<!----></h1> <div class="page-slot page-slot-top">
+    <div class="wwads-cn wwads-horizontal page-wwads" data-id="136"></div>
+    <style>
+      .page-wwads{
+        width:100%!important;
+        min-height: 0;
+        margin: 0;
+      }
+      .page-wwads .wwads-img img{
+        width:80px!important;
+      }
+      .page-wwads .wwads-poweredby{
+        width: 40px;
+        position: absolute;
+        right: 25px;
+        bottom: 3px;
+      }
+      .wwads-content .wwads-text, .page-wwads .wwads-text{
+        height: 100%;
+        padding-top: 5px;
+        display: block;
+      }
+  </style>
+  </div> <div class="theme-vdoing-content content__default"><h2 id="_1-必备知识"><a href="#_1-必备知识" class="header-anchor">#</a> 1.必备知识</h2> <h3 id="_1-1短信发送流程"><a href="#_1-1短信发送流程" class="header-anchor">#</a> 1.1短信发送流程</h3> <p><img src="https://raw.githubusercontent.com/zhuchenghao1337/github-images/main/2023/20230327133046.png" alt=""></p> <p>程序整理内容和手机号给短信平台，平台与运营商合作</p> <p>第一步：前端点击发送验证码，后端拿到手机号码，生成验证码，整理短信内容，发送短信并根据响应结果并响应最后结果。</p> <p>第二步：用户收到短信，填写验证吗，点击登录，后端拿到验证码并进行比对，成功就登录成功。</p> <h3 id="_1-2短信模板"><a href="#_1-2短信模板" class="header-anchor">#</a> 1.2短信模板</h3> <p>短信模板由国家工信部审核通过以后，才能使用。</p> <p>模板包括：</p> <ol><li>短信签名：[xxxx]</li> <li>短信正文：你的验证码为：123456。</li></ol> <h3 id="_1-3java发送请求"><a href="#_1-3java发送请求" class="header-anchor">#</a> 1.3Java发送请求</h3> <p>使用HttpClient发送请求</p> <h2 id="_2-步骤流程"><a href="#_2-步骤流程" class="header-anchor">#</a> 2.步骤流程</h2> <h3 id="_2-1依赖和工具类"><a href="#_2-1依赖和工具类" class="header-anchor">#</a> 2.1依赖和工具类</h3> <details class="custom-block details"><summary>点击查看</summary> <div class="language- extra-class"><pre class="language-text"><code>        &lt;dependency&gt;
+            &lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;
+            &lt;artifactId&gt;httpclient&lt;/artifactId&gt;
+            &lt;version&gt;4.5.3&lt;/version&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.alibaba&lt;/groupId&gt;
+            &lt;artifactId&gt;fastjson&lt;/artifactId&gt;
+            &lt;version&gt;1.2.36&lt;/version&gt;
+        &lt;/dependency&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpStatus;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.config.RequestConfig;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.*;
+import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
+
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.util.*;
+
+public class HttpClientUtils {
+
+    /**
+     * 编码格式。发送编码格式统一用UTF-8
+     */
+    private static final String ENCODING = &quot;UTF-8&quot;;
+
+    /**
+     * 设置连接超时时间，单位毫秒。
+     */
+    private static final Integer CONNECT_TIMEOUT = 6000;
+
+    /**
+     * 请求获取数据的超时时间(即响应时间)，单位毫秒。
+     */
+    private static final Integer SOCKET_TIMEOUT = 6000;
+
+
+    /**
+     * 发送get请求；不带请求头和请求参数
+     *
+     * @param url 请求地址
+     * @return
+     * @throws Exception
+     */
+    public static String doGet(String url) throws Exception {
+        return doGet(url, null, null);
+    }
+
+    /**
+     * 发送get请求；带请求参数
+     *
+     * @param url    请求地址
+     * @param params 请求参数集合
+     * @return
+     * @throws Exception
+     */
+    public static String doGet(String url, Map&lt;String, String&gt; params) throws Exception {
+        return doGet(url, null, params);
+    }
+
+    /**
+     * 发送get请求；带请求头和请求参数
+     *
+     * @param url     请求地址
+     * @param headers 请求头集合
+     * @param params  请求参数集合
+     * @return
+     * @throws Exception
+     */
+    public static String doGet(String url, Map&lt;String, String&gt; headers, Map&lt;String, String&gt; params) throws Exception {
+        // 创建httpClient对象
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+
+        // 创建访问的地址
+        URIBuilder uriBuilder = new URIBuilder(url);
+        if (params != null) {
+            Set&lt;Map.Entry&lt;String, String&gt;&gt; entrySet = params.entrySet();
+            for (Map.Entry&lt;String, String&gt; entry : entrySet) {
+                uriBuilder.setParameter(entry.getKey(), entry.getValue());
+            }
+        }
+
+        // 创建http对象
+        HttpGet httpGet = new HttpGet(uriBuilder.build());
+        /**
+         * setConnectTimeout：设置连接超时时间，单位毫秒。
+         * setConnectionRequestTimeout：设置从connect Manager(连接池)获取Connection
+         * 超时时间，单位毫秒。这个属性是新加的属性，因为目前版本是可以共享连接池的。
+         * setSocketTimeout：请求获取数据的超时时间(即响应时间)，单位毫秒。
+         * 如果访问一个接口，多少时间内无法返回数据，就直接放弃此次调用。
+         */
+        RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(CONNECT_TIMEOUT).setSocketTimeout(SOCKET_TIMEOUT).build();
+        httpGet.setConfig(requestConfig);
+
+        // 设置请求头
+        packageHeader(headers, httpGet);
+
+        // 创建httpResponse对象
+        CloseableHttpResponse httpResponse = null;
+
+        //响应结果
+        String result = &quot;&quot;;
+        try {
+
+            // 执行请求
+            httpResponse = httpClient.execute(httpGet);
+
+            // 获取返回结果
+            if (httpResponse != null &amp;&amp; httpResponse.getStatusLine() != null) {
+                if (httpResponse.getEntity() != null) {
+                    result = EntityUtils.toString(httpResponse.getEntity(), ENCODING);
+                }
+            }
+        } finally {
+            // 释放资源
+            release(httpResponse, httpClient);
+        }
+
+        return result;
+    }
+
+    /**
+     * 发送post请求；不带请求头和请求参数
+     *
+     * @param url 请求地址
+     * @return
+     * @throws Exception
+     */
+    public static String doPost(String url) throws Exception {
+        return doPost(url, null, null);
+    }
+
+    /**
+     * 发送post请求；带请求参数
+     *
+     * @param url    请求地址
+     * @param params 参数集合
+     * @return
+     * @throws Exception
+     */
+    public static String doPost(String url, Map&lt;String, Object&gt; params) throws Exception {
+        return doPost(url, null, params);
+    }
+
+    /**
+     * 发送post请求；带请求头和请求参数
+     *
+     * @param url     请求地址
+     * @param headers 请求头集合
+     * @param params  请求参数集合
+     * @return
+     * @throws Exception
+     */
+    public static String doPost(String url, Map&lt;String, String&gt; headers, Map&lt;String, Object&gt; params) throws Exception {
+        // 创建httpClient对象
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+
+        // 创建http对象
+        HttpPost httpPost = new HttpPost(url);
+        /**
+         * setConnectTimeout：设置连接超时时间，单位毫秒。
+         * setConnectionRequestTimeout：设置从connect Manager(连接池)获取Connection
+         * 超时时间，单位毫秒。这个属性是新加的属性，因为目前版本是可以共享连接池的。
+         * setSocketTimeout：请求获取数据的超时时间(即响应时间)，单位毫秒。 如果访问一个接口，多少时间内无法返回数据，就直接放弃此次调用。
+         */
+        RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(CONNECT_TIMEOUT).setSocketTimeout(SOCKET_TIMEOUT).build();
+        httpPost.setConfig(requestConfig);
+        // 设置请求头
+        /*httpPost.setHeader(&quot;Cookie&quot;, &quot;&quot;);
+        httpPost.setHeader(&quot;Connection&quot;, &quot;keep-alive&quot;);
+        httpPost.setHeader(&quot;Accept&quot;, &quot;application/json&quot;);
+        httpPost.setHeader(&quot;Accept-Language&quot;, &quot;zh-CN,zh;q=0.9&quot;);
+        httpPost.setHeader(&quot;Accept-Encoding&quot;, &quot;gzip, deflate, br&quot;);
+        httpPost.setHeader(&quot;User-Agent&quot;, &quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36&quot;);*/
+        packageHeader(headers, httpPost);
+
+        // 封装请求参数
+        packageParam(params, httpPost);
+
+        // 创建httpResponse对象
+        CloseableHttpResponse httpResponse = null;
+
+        String result = &quot;&quot;;
+        try {
+
+            // 执行请求
+            httpResponse = httpClient.execute(httpPost);
+
+            // 获取返回结果
+            if (httpResponse != null &amp;&amp; httpResponse.getStatusLine() != null) {
+                if (httpResponse.getEntity() != null) {
+                    result = EntityUtils.toString(httpResponse.getEntity(), ENCODING);
+                }
+            }
+
+        } finally {
+            // 释放资源
+            release(httpResponse, httpClient);
+        }
+        return result;
+    }
+
+
+    /**
+     * @Title:POST请求
+     * @Decription:发送POST请求，data参数只支持JSON对象（com.alibaba.fastjson.JSONObject）
+     * @param url  请求地址
+     * @param data 只支持JSON对象（com.alibaba.fastjson.JSONObject）
+     * @return String
+     */
+    public static String sendPost(String url, JSONObject data) throws IOException {
+        // 设置默认请求头
+        Map&lt;String, String&gt; headers = new HashMap&lt;&gt;();
+        headers.put(&quot;content-type&quot;, &quot;application/json&quot;);
+
+        return doPostByJSON(url, headers, data, ENCODING);
+    }
+
+    /**
+     * @Title:POST请求
+     * @param url    请求地址
+     * @param params Map集合(输入参数要求为JSON对象)
+     * @return String
+     */
+    public static String sendPost(String url, Map&lt;String, Object&gt; params) throws IOException {
+        // 设置默认请求头
+        Map&lt;String, String&gt; headers = new HashMap&lt;&gt;();
+        headers.put(&quot;Content-Type&quot;, &quot;application/json&quot;);
+        // 将map转成json
+        JSONObject data = JSONObject.parseObject(JSON.toJSONString(params));
+        return doPostByJSON(url, headers, data, ENCODING);
+    }
+
+    /**
+     * @Title POST请求
+     * @param url     请求地址
+     * @param headers Map集合的请求头信息
+     * @param data    只支持JSON对象（com.alibaba.fastjson.JSONObject）
+     * @return String
+     */
+    public static String sendPost(String url, Map&lt;String, String&gt; headers, JSONObject data) throws IOException {
+        return doPostByJSON(url, headers, data, ENCODING);
+    }
+
+
+    /**
+     * @Title POST请求（默认编码：UTF-8）
+     * @param url     请求地址
+     * @param headers Map集合的请求头参数
+     * @param params  Map集合(输入参数为JSON对象)
+     * @return String
+     */
+    public static String sendPost(String url, Map&lt;String, String&gt; headers, Map&lt;String, String&gt; params) throws IOException {
+        // 将map转成json
+        JSONObject data = JSONObject.parseObject(JSON.toJSONString(params));
+        return doPostByJSON(url, headers, data, ENCODING);
+    }
+
+    /**
+     * @Title: sendPost
+     * @Description: TODO(发送post请求)
+     * @author 郭鑫
+     * @date 2018年5月10日 下午4:36:17
+     * @param url      请求地址
+     * @param headers  请求头
+     * @param data     请求实体
+     * @param encoding 字符集
+     * @return String
+     * @throws IOException
+     */
+    private static String doPostByJSON(String url, Map&lt;String, String&gt; headers, JSONObject data, String encoding) throws IOException {
+        // 请求返回结果
+        String resultJson = null;
+        // 创建Client
+        CloseableHttpClient client = HttpClients.createDefault();
+        // 发送请求,返回响应对象
+        CloseableHttpResponse response = null;
+        // 创建HttpPost对象
+        HttpPost httpPost = new HttpPost();
+
+        /**
+         * setConnectTimeout：设置连接超时时间，单位毫秒。
+         * setConnectionRequestTimeout：设置从connect Manager(连接池)获取Connection
+         * 超时时间，单位毫秒。这个属性是新加的属性，因为目前版本是可以共享连接池的。
+         * setSocketTimeout：请求获取数据的超时时间(即响应时间)，单位毫秒。
+         * 如果访问一个接口，多少时间内无法返回数据，就直接放弃此次调用。
+         */
+        RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(CONNECT_TIMEOUT).setSocketTimeout(SOCKET_TIMEOUT).build();
+        httpPost.setConfig(requestConfig);
+
+        try {
+            // 设置请求地址
+            httpPost.setURI(new URI(url));
+            // 设置请求头
+            packageHeader(headers, httpPost);
+
+            // 设置实体
+            httpPost.setEntity(new StringEntity(JSON.toJSONString(data)));
+            // 发送请求,返回响应对象
+            response = client.execute(httpPost);
+            // 获取响应状态
+            int status = response.getStatusLine().getStatusCode();
+
+            if (status != HttpStatus.SC_OK) {
+                System.out.println(&quot;响应失败，状态码：&quot; + status);
+            }
+            // 获取响应结果
+            resultJson = EntityUtils.toString(response.getEntity(), encoding);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            release(response, client);
+        }
+        return resultJson;
+    }
+
+    /**
+     * POST请求xml参数
+     * @param url
+     * @param requestDataXml
+     * @return String
+     */
+    public static String doPostByXml(String url, String requestDataXml) {
+        CloseableHttpClient httpClient = null;
+        CloseableHttpResponse response = null;
+        String result = &quot;&quot;;
+
+        try {
+            //创建httpClient实例
+            httpClient = HttpClients.createDefault();
+            //创建httpPost远程连接实例
+            HttpPost httpPost = new HttpPost(url);
+            //配置请求参数实例
+            RequestConfig requestConfig = RequestConfig.custom()
+                    .setConnectTimeout(35000)//设置连接主机服务超时时间
+                    .setConnectionRequestTimeout(35000)//设置连接请求超时时间
+                    .setSocketTimeout(60000)//设置读取数据连接超时时间
+                    .build();
+            //为httpPost实例设置配置
+            httpPost.setConfig(requestConfig);
+            //设置请求参数
+            httpPost.setEntity(new StringEntity(requestDataXml,&quot;UTF-8&quot;));
+            //设置请求头内容
+            httpPost.addHeader(&quot;Content-Type&quot;,&quot;text/xml&quot;);
+
+            //执行post请求得到返回对象
+            response = httpClient.execute(httpPost);
+            //通过返回对象获取数据
+            HttpEntity entity = response.getEntity();
+            //将返回的数据转换为字符串
+            result = EntityUtils.toString(entity);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            //关闭资源
+            if (null != response) {
+                try {
+                    response.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (null != httpClient) {
+                try {
+                    httpClient.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return result;
+    }
+
+
+    /**
+     * Description: 封装请求头
+     *
+     * @param params
+     * @param httpMethod
+     */
+    public static void packageHeader(Map&lt;String, String&gt; params, HttpRequestBase httpMethod) {
+        // 封装请求头
+        if (params != null) {
+            Set&lt;Map.Entry&lt;String, String&gt;&gt; entrySet = params.entrySet();
+            for (Map.Entry&lt;String, String&gt; entry : entrySet) {
+                // 设置到请求头到HttpRequestBase对象中
+                httpMethod.setHeader(entry.getKey(), entry.getValue());
+            }
+        }
+    }
+
+    /**
+     * Description: 封装请求参数
+     *
+     * @param params
+     * @param httpMethod
+     * @throws UnsupportedEncodingException
+     */
+    public static void packageParam(Map&lt;String, Object&gt; params, HttpEntityEnclosingRequestBase httpMethod)
+            throws UnsupportedEncodingException {
+        // 封装请求参数
+        if (null != params &amp;&amp; params.size() &gt; 0) {
+            List&lt;NameValuePair&gt; nvps = new ArrayList&lt;NameValuePair&gt;();
+            Set&lt;Map.Entry&lt;String, Object&gt;&gt; entrySet = params.entrySet();
+            for (Map.Entry&lt;String, Object&gt; entry : entrySet) {
+                nvps.add(new BasicNameValuePair(entry.getKey(), entry.getValue().toString()));
+            }
+
+            // 设置到请求的http对象中
+            httpMethod.setEntity(new UrlEncodedFormEntity(nvps, ENCODING));
+        }
+    }
+
+
+
+
+    /**
+     * @Title: sendGet
+     * @Description: TODO(发送get请求)
+     * @author wangxy
+     * @date 2018年5月14日 下午2:39:01
+     * @param url      请求地址
+     * @param params   请求参数
+     * @param encoding 编码
+     * @return String
+     * @throws IOException
+     */
+    private static String sendGet(String url, Map&lt;String, Object&gt; params, String encoding) throws IOException {
+        // 请求结果
+        String resultJson = null;
+        // 创建client
+        CloseableHttpClient client = HttpClients.createDefault();
+        //响应对象
+        CloseableHttpResponse response = null;
+        // 创建HttpGet
+        HttpGet httpGet = new HttpGet();
+        try {
+            // 创建uri
+            URIBuilder builder = new URIBuilder(url);
+            // 封装参数
+            if (params != null) {
+                for (String key : params.keySet()) {
+                    builder.addParameter(key, params.get(key).toString());
+                }
+            }
+            URI uri = builder.build();
+            // 设置请求地址
+            httpGet.setURI(uri);
+
+            //设置配置请求参数
+            RequestConfig requestConfig = RequestConfig.custom()
+                    .setConnectTimeout(35000)//连接主机服务超时时间
+                    .setConnectionRequestTimeout(35000)//请求超时时间
+                    .setSocketTimeout(60000)//数据读取超时时间
+                    .build();
+
+            // 发送请求，返回响应对象
+            response = client.execute(httpGet);
+            // 获取响应状态
+            int status = response.getStatusLine().getStatusCode();
+
+            if (status != HttpStatus.SC_OK) {
+                System.out.println(&quot;响应失败，状态码：&quot; + status);
+            }
+
+            // 获取响应数据
+            resultJson = EntityUtils.toString(response.getEntity(), encoding);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            release(response, client);
+        }
+        return resultJson;
+    }
+
+
+    /**
+     * Description: 释放资源
+     *
+     * @param httpResponse
+     * @param httpClient
+     * @throws IOException
+     */
+    public static void release(CloseableHttpResponse httpResponse, CloseableHttpClient httpClient) throws IOException {
+        // 释放资源
+        if (httpResponse != null) {
+            httpResponse.close();
+        }
+        if (httpClient != null) {
+            httpClient.close();
+        }
+    }
+
+
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>随即数生成
+
+public class RandomUtils {
+    public static String generateCode(int len) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for(int i = 0; i &lt; len; i++) {
+            stringBuilder.append(Math.round(Math.random()*9));
+        }
+        return stringBuilder.toString();
+    }
+}
+</code></pre></div></details> <h3 id="_2-2写发送验证码接口"><a href="#_2-2写发送验证码接口" class="header-anchor">#</a> 2.2写发送验证码接口</h3> <div class="language- extra-class"><pre class="language-text"><code>    @ApiOperation(value = &quot;发送验证码&quot;)
+    @PostMapping(&quot;/sms/send&quot;)
+    public R smsSend(@RequestBody MessageSendDto messageSendDto) throws Exception {
+        // 判断phone合法性
+        String phone = messageSendDto.getPhone();
+        // 生成验证码
+        String code = RandomUtils.generateCode(4);
+        // 存储到一个地方 redis
+        // 整理短信内容
+        String content = &quot;凯信通,您的验证码是：&quot;+code;
+        // 发送请求 httpClient
+        Map&lt;String, String&gt; parasMap = new HashMap&lt;&gt;();
+        parasMap.put(&quot;appkey&quot;, &quot;3020617669272767725ba8c5751c38cc&quot;);
+        parasMap.put(&quot;mobile&quot;, phone);
+        parasMap.put(&quot;content&quot;,&quot;【京东】你的验证码是：&quot;+code+&quot;，3分钟内有效！&quot;);
+//        String result = HttpClientUtils.doGet(&quot;https://way.jd.com/kaixintong/kaixintong&quot;, parasMap);
+        // 模拟报文
+        String result=&quot;{\n&quot; +
+                &quot;    \&quot;code\&quot;: \&quot;10000\&quot;,\n&quot; +
+                &quot;    \&quot;charge\&quot;: false,\n&quot; +
+                &quot;    \&quot;remain\&quot;: 0,\n&quot; +
+                &quot;    \&quot;msg\&quot;: \&quot;查询成功\&quot;,\n&quot; +
+                &quot;    \&quot;result\&quot;: {\n&quot; +
+                &quot;        \&quot;ReturnStatus\&quot;: \&quot;Success\&quot;,\n&quot; +
+                &quot;        \&quot;Message\&quot;: \&quot;ok\&quot;,\n&quot; +
+                &quot;        \&quot;RemainPoint\&quot;: 940462,\n&quot; +
+                &quot;        \&quot;TaskID\&quot;: 80270110,\n&quot; +
+                &quot;        \&quot;SuccessCounts\&quot;: 1\n&quot; +
+                &quot;    },\n&quot; +
+                &quot;    \&quot;requestId\&quot;: \&quot;0228838f4e2f4dd98513b6ae1033effb\&quot;\n&quot; +
+                &quot;}&quot;;
+        // 对响应结果进行解析
+        JSONObject jsonObject = JSONObject.parseObject(result);
+        String code1 = jsonObject.getString(&quot;code&quot;);
+        if(!&quot;10000&quot;.equals(code1)){
+            return R.errorResult(100,&quot;通讯异常&quot;);
+        }
+        JSONObject jsonObject1 = jsonObject.getJSONObject(&quot;result&quot;);
+        String returnstatus = jsonObject1.getString(&quot;ReturnStatus&quot;);
+        System.out.println(returnstatus);
+        if(!&quot;Success&quot;.equals(returnstatus)){
+            return R.errorResult(100,&quot;短信发送失败&quot;);
+        }
+        return R.okResult(code);
+    }
+</code></pre></div><h3 id="_2-3登录-其他-接口"><a href="#_2-3登录-其他-接口" class="header-anchor">#</a> 2.3登录(其他)接口</h3> <p>添加验证码验证</p></div></div>  <div class="page-edit"><!----> <!----> <!----></div> <div class="page-nav-wapper"><!----> <!----></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="mailto:zch1337@outlook.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/zhuchenghao1337" title="GitHub" target="_blank" class="iconfont icon-github"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2023-2023
+    <span>zch1337 | MIT License</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/zhuchenghao1337-doc.github.io/assets/js/app.b5aa0822.js" defer></script><script src="/zhuchenghao1337-doc.github.io/assets/js/2.34960497.js" defer></script><script src="/zhuchenghao1337-doc.github.io/assets/js/16.9d8da3be.js" defer></script>
+  </body>
+</html>
